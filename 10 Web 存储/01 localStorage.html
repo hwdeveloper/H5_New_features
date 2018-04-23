@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>01 localStorage</title> 
+</head>
+<body>
+
+<div id="result"></div>
+<script>
+    if(typeof(Storage)!=="undefined")
+    {
+        localStorage.sitename="web 存储";
+        document.getElementById("result").innerHTML="存储数据：" + localStorage.sitename;
+    }
+    else
+    {
+        document.getElementById("result").innerHTML="对不起，您的浏览器不支持 web 存储。";
+    }
+</script>
+
+</body>
+</html>
