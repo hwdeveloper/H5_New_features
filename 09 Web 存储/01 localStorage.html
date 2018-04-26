@@ -10,7 +10,9 @@
 <script>
     if(typeof(Storage)!=="undefined")
     {
+        //存储数据
         localStorage.sitename="web 存储";
+        //取出数据，并且显示在页面
         document.getElementById("result").innerHTML="存储数据：" + localStorage.sitename;
     }
 </script>
